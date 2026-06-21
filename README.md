@@ -61,3 +61,25 @@ To run the automated test suite for the frontend components:
 cd frontend
 npm run test
 ```
+
+## Python Automation & ML Scripts
+This project includes a suite of Python scripts in the `python_tools` directory tailored for automated testing and machine learning data analysis.
+
+### Prerequisites
+Make sure you have Python installed, then install the required dependencies:
+```bash
+cd python_tools
+pip install -r requirements.txt
+```
+
+### 1. Automated Integration Tests
+Runs end-to-end integration tests against the backend API to validate endpoints:
+```bash
+python api_automation_test.py
+```
+
+### 2. Search Trend Analyzer (AI/ML)
+Connects directly to the SQLite database to extract historical search queries and uses `scikit-learn` for trend prediction via CountVectorizer token analysis:
+```bash
+python search_trend_analyzer.py
+```
